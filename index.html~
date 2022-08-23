@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .button1{
+	background-color: #a4ca35;
+	border: none;
+	color: black;
+	padding: 20px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 5px;
+    }
+
+    .button2{
+	background-color: #708a24;
+	border: none;
+	color: black;
+	padding: 20px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 5px;
+    }
+  </style>
+  <body style="background-color:SlateBlue;">
+    <center>
+      <h1 style="font-family:Monaco;font-size:200%;">Digital Portfolio</h1>
+      <p style="font-family:Monaco;font-size:115%;">By: Will Turner</p>
+
+      <!-- CS1 ISP button -->
+      <a href="https://www.codermerlin.com/users/william-turner/Digital%20Portfolio/CS1ISP.html">
+	<button class="button1">
+	  My CS1 ISP
+	</button>
+      </a>
+
+      <!-- About me button -->
+      <a href="https://www.codermerlin.com/users/william-turner/Digital%20Portfolio/index.html">
+	<button class="button2">
+	  About Me
+	</button>
+      </a>
+
+      <!-- My Classes -->
+      <a href="https://www.codermerlin.com/users/william-turner/Digital%20Portfolio/myclasses.html">
+	<button class="button1">
+	  My Classes
+	</button>
+      </a>
+    </center>
+  </body>
+</html>
