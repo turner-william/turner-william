@@ -76,14 +76,14 @@
     
       <!-- My Classes -->
       <a href="https://www.codermerlin.com/users/william-turner/Digital%20Portfolio/myclasses.html">
-	<button class="button2">
+	<button class="button1">
 	  My Classes
 	</button>
       </a>
 
       <!-- CS-II button -->
       <a href="https://www.codermerlin.com/users/william-turner/Digital%20Portfolio/CS-II/Essays/index.html">
-	<button class="button1">
+	<button class="button2">
 	  CS-II
 	</button>
       </a>
@@ -91,7 +91,7 @@
     <br> 
     <br>
     <div class="textdiv">
-      <p style="font-family:Monaco;font-size:100%;"></p>
+      
     </div>
   </body>
 </html>
