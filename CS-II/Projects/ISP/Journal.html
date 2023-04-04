@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .button1{
+	  background-color: #a4ca35;
+	  border: none;
+	  color: black;
+	  padding: 20px 30px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 20px;
+	  border-radius: 5px;
+	  align-content: center;
+	  margin: auto;
+      }
+      
+      .button2{
+	  background-color: #708a24;
+	  border: none;
+	  color: black;
+	  padding: 20px 30px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 20px;
+	  border-radius: 5px;
+	  align-content: center;
+	  margin: auto;
+      }
+      
+      .textdiv {
+	  text-align: left;
+	  background-color: #8467d7;
+	  border-radius: 15px;
+	  box-shadow: 5px 7px #452898;
+	  height: 400px;
+	  width: 66%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding: 15px;
+      }
+      .buttondiv {
+	  text-align: center;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding: 10px;
+      }
+    </style>
+  </head>
+  <title> ISP Journal </title>
+  <body style="background-color:SlateBlue;">
+    <div class="buttondiv">
+      <!-- Home button -->
+      <a href="https://www.codermerlin.com/users/william-turner/Digital%20Portfolio/index.html">
+	<button class="button1">
+	  Home
+	</button>
+      </a>
+    </div>
+
+    <!-- March 31 -->
+    <center style="font-size: 24px">
+      <b>March 31 Journal</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Significant Achievements:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	<a href="https://github.com/CSAllenISD/2023-ISP-MoodAndGrasp/issues/48"> Commit 1 </a><a href="https://github.com/CSAllenISD/2023-ISP-MoodAndGrasp/issues/49"> commit 2 </a> <a href="https://github.com/CSAllenISD/2023-ISP-MoodAndGrasp/issues/52"> commit 3 </a> adds a Classes page navigatable from the nav bar at the top. Upon visiting the page, it asks to enter a class code. One you enter the code (Only one at this point is ABCDEF), a valid one will add you to the classroom and an invalid one will result in an error that says no class found. Each Code is randomly generated at the creation of a classroom, so it should be easy to expand
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	One technical Challenge we were facing for the Classes page is how the class codes are generated. A 6 Letter randomly generated code would be great, but django mostly uses uuid when it comes to randomly generated data values, and so those are used as placeholders for the time being. This unfortunatly means that Classrooms made will have a class code 36 characters long that could look something like "123e4567-e89b-12d3-a456-426614174000"
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	A Scheduling Issue Me and the other members faced was multitasking the growing tasks in the isp with thier workload. At this time it doesn't seem to be an issue, and as the school year comes to an end new material will no longer be presented and students can focus more on the ISP, hopefully boosting the productivity.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	No real Interpersonal Challenges for this week besides less communication then what might be neccesary
+      </p>
+    </center>
+    
+    <!-- March 24 -->
+    <center style="font-size: 24px">
+      <b>March 24 Journal</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Significant Achievements:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Password Reset Emails are now up with the <a href="https://github.com/CSAllenISD/2023-ISP-MoodAndGrasp/commit/6cd95eab0347be1c7fa2eaa8b5901bdf94631d0b">following commit.</a> Users can navigate to a password reset page from the login page, and can request a password reset. An email is sent to them with the custom email moodandgrasp@gmail.com with the details and info on how to reset their password. Once they click on the link, it takes them to a page where they can reset the password. 
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Now that the login and register pages are complete, We are putting our focus on Student and Teacher Accounts. Teachers should be able to create classrooms and host MoodAndGrasp Charts for their student to survey in. At this point, we don't have a seperate login page for teachers, and that will be made in the future.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	No scheduling challenges have arrived, and work on the ISP Has been smooth.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Some of the graphics are taking time to be made, so the creation of the data collecting survey will be put on hold until some temporary graphics are provided.
+      </p>
+    </center>
+    
+    <!-- March 17 -->
+    <center style="font-size: 24px">
+      <b>March 17 Journal</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Significant Achievements:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Added ChartJS Compatability in <a href="https://github.com/CSAllenISD/2023-ISP-MoodAndGrasp/commit/1f5780810a2e416671da2cdcf831827069f024e8">this commit.</a> ChartJS Will allow us to dynamically update the graph whenever someone's grasp of a concept or mood shifts. With its simple integration with Django, it can efficently access the SQL Data stored in the database. I integrated it with the server to ensure it would work, so at this moment in time just the framework and a testing graph has been added.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	One Techincal Issue that we are currently facing is Password reset. We plan on using a email system to reset passwords, but we are running into issues getting it to work. We are aiming to have it complete and running by next week.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Computer Science work is beginning to become a lot. With the ISP, Merlin Missions, and Java/Python courses its begun being difficult to juggle this class and the member's other classes as well, which is understandable so less work will be assigned this week, however more will need to be done in the future to make up for this difference.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+      No interpersonal Challenges
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+      </p>
+    </center>
+    
+
+    <!-- Journal 7 -->
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 7</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> February 13, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+      </p>
+    </center>
+    
+
+        <!-- Journal 6 -->
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 6</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> February 6, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	On the technical front things could be going worse but there is a lot of problems that need urgent fixing for this to be a viable product. Firstly we have the problem of having to host our link on ngrok right now which causes the link to change everytime while we search for a free way to host a django server on a stable link. This could easily be solved by paying a subscription of $5 per month but that seems like a waste of money. Secondly theres the problem of integrating our Django server with a SQL databse to store user information like username, password, and avatar.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	This is an extrmely tough time for us to have to be working on the ISP with the impending quarter closing, tests in every class, and the SAT coming up pretty soon which is extremely important for us to do good on Junior year. But yet through all these problems weve found time to work on the ISP this past week which I am very proud of.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	This is the first week im going to be able to say this and it makes me extremely happy, All of our group members have been discussing thiings together cohesively in a group chat! This took much longer than expected but im so happy it is finally happening and we can all stay cohesive and on the same page in terms of what to do.
+      </p>
+    </center>
+
+    
+    <!-- Journal 5 -->
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 5</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> January 29, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Nothing was achieved this is ice week
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Nothing was achieved this is ice week
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Nothing was achieved this is ice week
+      </p>
+    </center>
+
+    
+    <!-- Journal 4 -->
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 4</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> January 23, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Our biggest technological decision this week was settling fully on using python integrated with html and css because python has a ton of online resources for help if were ever struggling and html and css are standard for any coder and weve been working with them all year just like on this website now
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Its hard for us to actually have scheduling challenges because of the group chat because we can just reply whenever we arent busy and catch up on the discussion so no group member is left out and lagging behind at any point.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	We have fully constructed the Mood and Grasp group chat and now that all members are in it we are able to discuss our ISP without any issues.
+      </p>
+    </center>
+
+    
+    <!-- Journal 3 -->
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 3</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> January 16, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	weve been able to discuss various aspects of the ISP and now we have a general plan and we need to learn more specifics about the technology that we need to learn to be able to complete this project.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	We realized there would be a problem in having many of our group members in different classes so weve made a group chat so that all of us members can associate with eachother and contact eachother whenever we need help on the isp or need to discuss aspects of it.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Were having a hard time gettiing in contact with some of our group members but for the group members that are already in the group chat we have been able to discuss topics of our ISP fluidly without any arguments and any type of disagreement has been civil and respectful.
+      </p>
+    </center>
+
+    
+    <!-- Journal 2 -->
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 2</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> January 9, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	The main technical challenges at the moment are just researching different ideas that were coming up with on the github issues page. These technical issues are all just theory right now so we need to begin to take action to complete them and make them reality.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	Currently we are not having any scheduling problems. All of our group members are adding to the github issues board and were discussing things fine with no miscommunications so far.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">
+	At the moment we are doing great in our discussions adding valuable comments and overall getting a feel for the project were taking on.
+      </p>
+    </center>
+
+    
+    <!-- Journal 1 -->
+    <br> 
+    <br>
+    <center style="font-size: 24px">
+      <b>ISP Journal Entry 1</b> <br><br> William Turner <br><br> Allen ISD Steam Center <br><br> Advanced Computer Science 2 <br><br> Mr.Ben-Yakov <br><br> January 2, 2023
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="margin-left:350px;">
+      Technical Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;"> The main technical challenge i can imagine running into is making the website look nice and professional. Its easy to make a website but not easy to make a good website and of course i would like my ISP to be as good as possible. Im hoping i can get help from my team to decide the color schemes and overall design of the website so I can try to implement it to the best of my abilities.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Scheduling Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">Scheduling for the most part should not be a big issue because all of our group members are in close contact with eachother and can talk to eachother at any time. But my main scheduling concern is how one of our team members often finds himself busy with soccer practice and unable to have much freetime to work on schoolwork each night. While this is my main concern i really dont think it will be a problem because that team member is hard working and likes to put in his maximum effort into computer science each and every assignment.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Interpersonal Challenges:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;"> I cannot imagine having any interpersonal challenges on this project because of how well all of our group members know eachother.
+      </p>
+    </center>
+    <h2 style="margin-left:350px;">
+      Roles overview:
+    </h2>
+    <center style="font-size: 20pt; font-family:'Times New Roman'; line-height:2">
+      <p style="margin-left:300px; margin-right:300px;">For the first week of working on our ISP (SEL check in) we have been tasked with assigning roles throughout our group. There are five roles required on all teams: Development Engineer, QA Engineer, Project Manager, Product Manager, and Release Engineer. The Development Engineer will be the person who designs the product. They will also be tasked with the main chunk of code although everyone will participate in some aspect of coding this project. The QA (quality assurance) Engineer will create tests to run the project though to make sure that project is up to code (pun). They will then report the issues back to the group so we can work together to fix them. The project manager is responible for planning, organizing, and overseeing the work of the team to achieve specific goals and meet project objectives. They will be tasked with keeping us on schedule as well as contributing to other aspects of the project. The Product Manager is responsible for gathering and analyzing market and customer data. They will work with the rest of this group to make the product easy to use. The Release Engineer will be responsible for building, testing, and deploying software releases. They work closely with Development Engineer and QA Engineer to ensure that the code is properly integrated and tested, and that it can be easily deployed to production environments. When we assigned these roles withing the group we tried to work with our strengths and weaknesses. I have the most history with coding so we decided that I would be the Development Engineer. Robel is really good at finding errors within code and often helps us find errors in our own code se he was chosen as the QA engineer. Because we only have four people and there are five roles somebody will have to take on two roles. Nahom volunteered to be both the release engineer and project manager because the role of Release Engineer is mainly comprised of uploading versions to github and he will be able to handle both roles. Azmer volunteered to be the Product Manager because he is good at comprising schedules.
+      </p>
+    </center>
+  </body>
+</html>
