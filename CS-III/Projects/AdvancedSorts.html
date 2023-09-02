@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../../styles.css">
-    <script src="../../baseHTMLimport.js"></script> 
+    <title>Will's Advanced Sort Algorithms</title>
+    <link rel="stylesheet" href="../../imports/styles.css">
+    <script src="../../imports/baseHTMLimport.js"></script> 
   </head>
   <body>
     <!-- Nav Bar Div-->
-    <div w3-include-html="../../baseHTML.html"></div>
+    <div w3-include-html="../../imports/baseHTML.html"></div>
 
     <!-- Page Content -->
-    
+    <div class="page">
+      <h1>Advanced Sorts</h1>
+
+      <!-- Merge sort explanation -->
+      <h4>Merge Sort:</h4>
+      <p>
+	Merge sort is a divide-and-conquer sorting algorithm that works by recursively dividing an unsorted list into smaller sublists until each sublist contains just one element. Then, it combines these sublists in a sorted manner, merging them back together in a series of passes. The algorithm starts by splitting the original list in half, then continues to divide each half until we have sublists containing only one element, which are inherently sorted. Afterward, the merge operation takes place, where adjacent pairs of sublists are merged together in a way that maintains their sorted order. This process repeats recursively until we have a single sorted list. The key to merge sort's efficiency is in the merging step. When merging two sorted sublists, it compares the elements from both sublists and selects the smaller element to place in the new merged list. This ensures that the merged list remains sorted.
+      </p>
+
+      <!-- Quicksort explanation -->
+      <h4>Quicksort:</h4>
+      <p>
+	Quicksort is a popular and efficient sorting algorithm that follows a divide-and-conquer approach. It works by selecting a "pivot" element from the input array and partitioning the array into two subarrays: elements smaller than the pivot and elements greater than the pivot. These subarrays are then recursively sorted using the same quicksort algorithm. The pivot selection is a crucial step in the algorithm, and various strategies can be used to choose a pivot, such as selecting the first, last, or middle element. Quicksort's efficiency comes from its ability to sort smaller subarrays in-place, without the need for additional memory. The key to quicksort's speed is its ability to divide the problem into smaller subproblems efficiently and then combine the sorted subarrays without the need for additional merging, as in merge sort.
+      </p>
+
+      <!-- Heapsort explanation -->
+      <h4>Heapsort:</h4>
+      <p>
+	Heapsort is a comparison-based sorting algorithm that utilizes a specialized data structure called a binary heap to sort elements efficiently. The algorithm consists of two main phases: heapify and sorting. In the heapify phase, the input array is transformed into a max-heap or a min-heap, depending on whether we want to sort the array in ascending or descending order. A max-heap is a binary tree where each parent node has a value greater than or equal to its children, and a min-heap has each parent node with a value less than or equal to its children. The heapify operation involves arranging the elements in the array in such a way that it satisfies the heap property. This phase ensures that the maximum (or minimum) element is at the root of the heap. In the sorting phase, the algorithm repeatedly removes the root element from the heap (which is the maximum in a max-heap or the minimum in a min-heap) and places it at the end of the array. Then, it restores the heap property by sifting down the new root element to its correct position within the heap. This process continues until all elements have been removed from the heap and placed in the correct order within the array.
+      </p>
+
+      <!-- Time complexity -->
+      <h4>Time complexities:</h4>
+      
+      <h5>Merge Sort:</h5>
+      <p>Minimum: O(n log n)</p>
+      <p>Maximum: O(n log n)</p>
+      <p>Average: O(n log n)</p>
+
+      <h5>Quicksort:</h5>
+      <p>Minimum: O(n log n)</p>
+      <p>Maximum: O(n^2)</p>
+      <p>Average: O(n log n)</p>
+
+      <h5>Heapsort:</h5>
+      <p>Minimum: O(n log n)</p>
+      <p>Maximum: O(n log n)</p>
+      <p>Average: O(n log n)</p>
+
+      <h5>Comparison:</h5>
+      <p>
+	Merge sort has a consistent time complexity of O(n log n) for all input cases, making it highly reliable and predictable. Its divide-and-conquer approach ensures that the input is divided into smaller subproblems and then merged in a way that maintains the sorted order. While merge sort is not the fastest sorting algorithm in terms of raw speed, its stability, consistent performance, and suitability for external sorting scenarios make it a popular choice.
+      </p>
+      
+      <p>
+	Quicksort has an average-case time complexity of O(n log n), which makes it one of the fastest sorting algorithms in practice. However, it can degrade to O(n^2) in the worst case, but with proper pivot selection strategies (like the median-of-three method), its worst-case behavior is rare. Quicksort's performance can be highly efficient when implemented well, and its in-place sorting ability can make it memory-efficient. However, its performance can be sensitive to the initial input order.
+      </p>
+      
+      <p>
+	Heapsort also has a time complexity of O(n log n) in all cases, similar to merge sort, but it typically has a smaller constant factor, making it faster in practice. Heapsort builds a max-heap (or min-heap) from the input data and repeatedly extracts the maximum (or minimum) element, ensuring efficient sorting. It is an in-place sorting algorithm with a consistent performance that is less sensitive to the initial input order compared to quicksort. However, it does require additional memory for the heap structure.
+      </p>
+      
+      <p>
+	In summary, merge sort and heapsort offer consistent time complexities of O(n log n) and are suitable for various scenarios where predictability and stability are important. Quicksort can be extremely fast in practice but requires careful pivot selection to avoid worst-case behavior. The choice of sorting algorithm depends on the specific requirements of the application and the characteristics of the input data.
+      </p>
+
+      <!-- Space complexity-->
+      <h4>Space Complexities</h4>
+      
+      <h5>Merge Sort:</h5>
+      <p>With optimal implementation: O(n)</p>
+
+      <h5>Quicksort:</h5>
+      <p>Recursive implementations: O(n)
+      <p>Tail-recursive / Iterative implementations: O(log n)</p>
+
+      <h5>Heapsort:</h5>
+      <p>With optimal implementation: O(1)</p>
+
+      <h5>Comparison:</h5>
+      <p>
+	Merge sort, in its in-place implementation, typically exhibits a space complexity of O(n). It sorts the input by dividing it into smaller subproblems and merging them back together in the original array, using minimal additional memory for temporary variables and function call stack space. However, when implemented as an out-of-place merge sort, the space complexity can exceed O(n) because it creates new arrays for merging, making it less memory-efficient in such cases.
+      </p>
+
+      <p>
+	Quicksort's space complexity can vary depending on the implementation and pivot selection strategy. In its simplest recursive form, it can use O(log n) space for the function call stack. However, in the worst-case scenario when the pivot selection leads to deep recursion, the space complexity can become O(n). Some optimized versions aim to reduce this space usage by using tail recursion or iterative approaches, achieving better space efficiency.
+      </p>
+
+      <p>
+	Heapsort, on the other hand, is inherently an in-place sorting algorithm with a consistent space complexity of O(1), meaning it uses a constant amount of additional memory. It builds a heap data structure within the input array without allocating new memory, making it very memory-efficient. This characteristic can be advantageous in scenarios with limited available memory.
+      </p>
+
+      <!-- Citations -->
+      <h4>Citations</h4>
+      <p>OpenAI. "GPT-3.5." OpenAI, <a href="https://chat.openai.com/" target="_blank">https://chat.openai.com/</a>. Accessed 09/01/2023.</p>
+    </div>
     <!-- Nav Bar Script-->
     <script>
       includeHTML();

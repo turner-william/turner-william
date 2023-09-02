@@ -2,6 +2,7 @@
   Color Variables
 */
 :root {
+    --PageColor: #8782D9;
     --BackgroundColor: #8E8BDE;
     --NavBarColor: #383B53;
     --NavBarTextColor: white;
@@ -92,4 +93,46 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     font-size: 16px;
+}
+.page {
+    background-color: var(--PageColor);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 10px;
+    min-height: 1000px;
+}
+
+.page p {
+    line-height: 150%;
+    font-size: 18px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.page h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.page h4 {
+    font-size: 24px;
+    text-align: left;
+    text-indent: 1em;
+}
+
+.page h5 {
+    font-size: 18px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.column {
+    float: left;
+    width: 50%;
 }
